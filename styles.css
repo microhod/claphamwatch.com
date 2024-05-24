@@ -1,0 +1,11 @@
+header {
+    background-color: #3D396C;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
