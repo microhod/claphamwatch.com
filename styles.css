@@ -1,3 +1,9 @@
+/* undo default link styling */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* make the footer 'sticky' */
 body {
     display: flex;
@@ -8,14 +14,43 @@ main {
     flex-grow: 1;
 }
 
+/* center the logo & navbar in the header */
 header {
     background-color: #3D396C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* center the navbar links in a row */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* customise padding for the links */
+.nav-bar-link {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-bar-link-label {
+    margin-top: 0;
 }
 
+/* add colours to links & change colour on hover */
+.nav-bar-link-label {
+    color: white;
+    transition: color 0.5s;
+}
+.nav-bar-link-label:hover {
+    color: gray;
+}
+
+/* classes to show & hide page sections */
 .page {
     display: none;
 }
-
 .active {
     display: block;
 }
