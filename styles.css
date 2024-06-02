@@ -94,7 +94,7 @@ footer {
 }
 
 /* center all content inside the footer by default */
-footer > * {
+footer>* {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -115,7 +115,7 @@ footer > * {
 
 /* mobile: move external links to the top & allow them to grow to full width */
 @media all and (max-width: 700px) {
-    footer > * {
+    footer>* {
         flex: 1 100%;
     }
 
