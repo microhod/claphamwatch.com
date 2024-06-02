@@ -4,6 +4,14 @@ a {
     text-decoration: none;
 }
 
+/* setup font */
+html {
+    font-family: 'Raleway', sans-serif;
+}
+h1 h2 {
+    font-weight: bold;
+}
+
 /* make the footer 'sticky' */
 body {
     display: flex;
