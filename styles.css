@@ -11,16 +11,11 @@ html {
 h1 h2 {
     font-weight: bold;
 }
+footer {
+    font-weight: 200;
+}
 
-/* make the footer 'sticky' */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main {
-    flex-grow: 1;
-}
+/* HEADER */
 
 /* center the logo & navbar in the header */
 header {
@@ -55,10 +50,42 @@ header {
     color: gray;
 }
 
+/* MAIN */
+
 /* classes to show & hide page sections */
 .page {
     display: none;
 }
 .active {
     display: block;
+}
+
+/* FOOTER */
+
+/* make the footer 'sticky' */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
+
+/* styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.external-links {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.external-link {
+    margin-left: 30px;
+    margin-right: 30px;
 }
