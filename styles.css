@@ -93,6 +93,13 @@ footer {
     margin: 15px 50px 15px 50px;
 }
 
+/* center all content inside the footer by default */
+footer > * {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .external-links {
     display: flex;
     flex-flow: row nowrap;
@@ -106,15 +113,14 @@ footer {
     max-width: 30vw;
 }
 
-/* mobile: set to column ordering & move external links to the top */
+/* mobile: move external links to the top & allow them to grow to full width */
 @media all and (max-width: 700px) {
-    footer {
-        flex-flow: column nowrap;
+    footer > * {
+        flex: 1 100%;
     }
 
     .external-links {
         order: -1;
-        /* this is meant to make the links take up the whole width but it doesn't seem to work :shrug: */
         max-width: 100vw;
     }
 }
