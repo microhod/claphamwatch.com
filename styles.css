@@ -31,7 +31,7 @@ header {
 /* center the navbar links in a row */
 .nav-bar {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
@@ -65,6 +65,20 @@ header {
 
 .active {
     display: block;
+}
+
+/* center pages */
+main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* home page */
+
+#home {
+    text-align: center;
 }
 
 /* FOOTER */
