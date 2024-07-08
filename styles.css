@@ -65,6 +65,7 @@ header {
 
 .active {
     display: block;
+    width: 100%;
 }
 
 /* center pages */
@@ -97,6 +98,86 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px 40px;
+}
+
+/* sign-up page */
+
+#mailing-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mailing-list>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    gap: 5px;
+}
+
+#mailing-list>form>input {
+    padding: 20px;
+    border: 0.25rem solid black;
+    border-radius: 5px;
+    font-style: italic;
+    background-color: white;
+}
+
+#mailing-list>form>.text-input {
+    width: 80%;
+    max-width: 600px;
+}
+
+#mailing-list>form>.text-input::placeholder {
+    color: black;
+    /* Firefox */
+    opacity: 1;
+}
+
+#mailing-list>form>.text-input::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: black;
+}
+
+#privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    font-style: italic;
+
+    /* replicate silly extra bottom padding on inputs */
+    margin-bottom: 30px;
+}
+
+#privacy-checkbox {
+    accent-color: black;
+    height: 30px;
+    width: 30px;
+}
+
+#submit {
+    /* override italic default for the form */
+    font-style: normal !important;
+    font-weight: 600;
+    transition: color 0.7s;
+}
+
+/* flip colours on hover */
+#submit:hover {
+    color: white;
+    background-color: black;
+}
+
+/* change back to normal as you click */
+#submit:focus {
+    color: black;
+    background-color: white;
 }
 
 /* FOOTER */
