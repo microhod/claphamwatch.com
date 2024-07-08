@@ -82,6 +82,18 @@ main {
     text-align: center;
 }
 
+@media all and (max-width: 700px) {
+    #home {
+        font-size: small;
+    }
+
+    #home-coverart{
+        object-fit: contain;
+        width: 80%;
+        height: auto;
+    }
+}
+
 /* music page */
 
 #music {
