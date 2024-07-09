@@ -82,6 +82,14 @@ main {
     text-align: center;
 }
 
+#home-coverart{
+    transition: 0.2s;
+}
+
+#home-coverart:hover{
+    transform: scale(1.03);
+}
+
 @media all and (max-width: 700px) {
     #home {
         font-size: small;
@@ -110,6 +118,14 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px 40px;
+}
+
+.coverart {
+    transition: 0.2s;
+}
+
+.coverart:hover{
+    transform: scale(1.1);
 }
 
 /* sign-up page */
