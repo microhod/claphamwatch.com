@@ -8,6 +8,12 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* prevent images being too big for small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* setup font */
 html {
     font-family: 'Raleway', sans-serif;
@@ -234,7 +240,14 @@ main {
     gap: 40px 40px;
 }
 
+#gallery > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .coverart {
+    max-width: 80%;
     transition: 0.2s;
 }
 
@@ -257,7 +270,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 80%;
     gap: 5px;
 }
 
@@ -308,6 +321,7 @@ main {
     font-style: normal !important;
     font-weight: 600;
     transition: color 0.7s;
+    max-width: 80%;
 }
 
 /* flip colours on hover */
