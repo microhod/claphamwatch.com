@@ -90,6 +90,14 @@ header {
     background-color: white;
 }
 
+/* class to block scrolling while modal is open */
+
+.no-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 .mobile-nav-close {
     position: relative;
     color: black;

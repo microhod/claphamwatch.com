@@ -24,21 +24,32 @@ function showContentFromHash() {
 }
 
 function showMobileModal() {
+    // activate modal
     document.querySelectorAll('.mobile-nav').forEach((e) => {
-        e.classList.add("mobile-nav-active");
+        e.classList.add('mobile-nav-active');
     });
+
+    // disable scrolling
+    document.querySelector('body').classList.add('no-scroll');
+    document.querySelector('html').classList.add('no-scroll');
 }
 
 function closeMobileModal() {
+    // close modal
     document.querySelectorAll('.mobile-nav').forEach((e) => {
-        e.classList.add("mobile-nav-closing");
+        e.classList.add('mobile-nav-closing');
         // wait for 'close' animation to finish before removing active class
         e.addEventListener('animationend', () => {
-            e.classList.remove("mobile-nav-active", "mobile-nav-closing");
+            e.classList.remove('mobile-nav-active', 'mobile-nav-closing');
         }, {
             once: true,
         });
     });
+
+    // re-enable scrolling
+    document.querySelectorAll('.no-scroll').forEach((e) => {
+        e.classList.remove('no-scroll')
+    })
 }
 
 function mobileNav(link) {
