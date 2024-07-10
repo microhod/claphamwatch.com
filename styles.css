@@ -3,6 +3,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
+/* remove default link highlight on mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
 
 /* setup font */
 html {
@@ -138,7 +142,7 @@ header {
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
-    height: 100vh;
+    height: 100%;
     gap: 10px;
 }
 
@@ -347,6 +351,14 @@ footer>* {
 
     flex-grow: 2;
     max-width: 30vw;
+}
+
+.external-link:hover {
+    color: grey;
+}
+
+.external-link:focus {
+    color: grey;
 }
 
 /* mobile: move external links to the top & allow them to grow to full width */
