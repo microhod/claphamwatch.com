@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="normalise.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,700' rel='stylesheet'>
     <script src="main.js"></script>
 </head>
 
@@ -28,6 +28,23 @@
                 <h2 class="nav-bar-link-label">Sign Up</h2>
             </a>
         </nav>
+        <i class="fa-solid fa-bars fa-2xl mobile-nav-open" onclick="showMobileModal()"></i>
+        <div class="mobile-nav-modal">
+            <nav class="mobile-nav-bar">
+                <a href="#home" class="nav-bar-link" onclick="mobileNav(this)">
+                    <h2 class="mobile-nav-bar-link-label">Home</h2>
+                </a>
+                <a href="#music" class="nav-bar-link" onclick="mobileNav(this)">
+                    <h2 class="mobile-nav-bar-link-label">Music</h2>
+                </a>
+                <a href="https://www.youtube.com/channel/UCnyw0TSruQPRd_PPJmp0Ryw" class="nav-bar-link">
+                    <h2 class="mobile-nav-bar-link-label">Videos</h2>
+                </a>
+                <a href="#sign-up" class="nav-bar-link" onclick="mobileNav(this)">
+                    <h2 class="mobile-nav-bar-link-label">Sign Up</h2>
+                </a>
+            </nav>
+        </div>
     </header>
     <main>
         <div id="home" class="page">
