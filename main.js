@@ -24,22 +24,25 @@ function showContentFromHash() {
 }
 
 function showMobileModal() {
-    modal = document.querySelector('.mobile-nav-modal');
-    modal.classList.remove("modal-hidden");
-    modal.classList.add("modal-active");
+    document.querySelectorAll('.mobile-nav').forEach((e) => {
+        e.classList.add("mobile-nav-active");
+    });
+}
+
+function closeMobileModal() {
+    document.querySelectorAll('.mobile-nav').forEach((e) => {
+        e.classList.add("mobile-nav-closing");
+        // wait for 'close' animation to finish before removing active class
+        e.addEventListener('animationend', () => {
+            e.classList.remove("mobile-nav-active", "mobile-nav-closing");
+        }, {
+            once: true,
+        });
+    });
 }
 
 function mobileNav(link) {
-    modal = document.querySelector('.mobile-nav-modal');
-    modal.classList.add("modal-hidden");
-
-    modal.addEventListener('animationend', () => {
-        console.log("remove active");
-        modal.classList.remove("modal-active");
-    }, {
-        once: true,
-    });
-
+    closeMobileModal();
     window.URL = link;
 }
 

@@ -78,23 +78,36 @@ header {
 }
 
 .mobile-nav-modal {
-    display: none;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: white;
+}
+
+.mobile-nav-close {
+    position: relative;
+    color: black;
+    cursor: pointer;
+    padding-bottom: 50px;
+    z-index: 1;
+    top: -30px;
+    margin-bottom: -51px;
+}
+
+.mobile-nav {
+    display: none;
     opacity: 0;
 }
 
-.modal-active {
+.mobile-nav-active {
     display: block;
     opacity: 1;
-    animation: showmodal 0.5s ease-out;
+    animation: opening-mobile-nav 0.5s ease-out;
 }
 
-@keyframes showmodal {
+@keyframes opening-mobile-nav {
     0% {
         opacity: 0;
     }
@@ -104,12 +117,12 @@ header {
     }
 }
 
-.modal-hidden {
-    animation: hidemodal 0.5s ease-out;
+.mobile-nav-closing {
+    animation: closing-mobile-nav 0.5s ease-out;
     opacity: 0;
 }
 
-@keyframes hidemodal {
+@keyframes closing-mobile-nav {
     0% {
         opacity: 1;
     }
@@ -126,6 +139,7 @@ header {
     justify-content: center;
     text-wrap: nowrap;
     height: 100vh;
+    gap: 10px;
 }
 
 .mobile-nav-bar-link-label {
