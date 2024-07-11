@@ -87,10 +87,11 @@
                 <h2>Mailing List</h2>
                 <form onsubmit="alert('Sorry, the mailing list isn\'t connected yet, please try again later.')">
                     <input class="text-input" type="text" id="first-name" name="first-name" placeholder="First Name*"
-                        required><br>
+                        autocomplete="given-name" required><br>
                     <input class="text-input" type="text" id="last-name" name="last-name" placeholder="Last Name*"
-                        required><br>
-                    <input class="text-input" type="email" id="email" name="email" placeholder="Email*" required><br>
+                        autocomplete="family-name" required><br>
+                    <input class="text-input" type="email" id="email" name="email" placeholder="Email*"
+                        autocomplete="email" required><br>
                     <label id="privacy">
                         <input type="checkbox" id="privacy-checkbox" name="privacy" required>
                         I accept the <a href="/privacy.html"><u>privacy policy</u></a>
