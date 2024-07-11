@@ -197,6 +197,10 @@ main {
 }
 
 #home-coverart {
+    height: 50vh;
+    max-height: 500px;
+    width: auto;
+
     transition: 0.2s;
 }
 
@@ -211,8 +215,7 @@ main {
 
     #home-coverart {
         object-fit: contain;
-        width: 80%;
-        height: auto;
+        max-width: 80%;
     }
 }
 
